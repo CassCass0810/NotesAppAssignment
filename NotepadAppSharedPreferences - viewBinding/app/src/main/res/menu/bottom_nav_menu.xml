@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="blank1"></item>
+    <item android:title="blank2"></item>
+    <item android:title="blank3"></item>
+    <item
+        android:id="@+id/addNote"
+        android:title="AddNotes"
+        android:icon="@drawable/ic_addnote"
+            />
+
+
+</menu>

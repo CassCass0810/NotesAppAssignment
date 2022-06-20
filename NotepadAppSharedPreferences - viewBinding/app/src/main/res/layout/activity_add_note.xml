@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp">
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_left_arrow"
+                android:background="#00000000"
+                app:tint="#ffcc00"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text="All iCloud"
+                android:gravity="left|center"
+                android:textSize="20dp"
+                android:textColor="#ffcc00"/>
+
+            <ImageButton
+                android:id="@+id/more"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_more"
+                android:background="#00000000"
+                android:gravity="right|center"
+                app:tint="#ffcc00"/>
+
+        </LinearLayout>
+
+        <!--    Content-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="15dp"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/note"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="5dp"
+                android:background="#00000000"
+                android:gravity="center|top|left"
+                android:hint="Note"
+                android:inputType="textMultiLine"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:gravity="center|bottom"
+            android:layout_weight="1"
+            >
+
+            <ImageButton
+                android:id="@+id/checkbox"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_checkbox"
+                android:background="#00000000"
+                app:tint="#ffcc00"/>
+
+            <ImageButton
+                android:id="@+id/camera"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_camera"
+                android:background="#00000000"
+                app:tint="#ffcc00"/>
+
+            <ImageButton
+                android:id="@+id/draw"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:background="#00000000"
+                android:src="@drawable/ic_draw"
+                app:tint="#ffcc00" />
+
+            <Button
+                android:id="@+id/buttonAddNote"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_add_note"
+                android:layout_gravity="bottom|center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+<!--    <com.google.android.material.navigation.NavigationView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_gravity="start"-->
+<!--        app:menu="@menu/bottom_nav_menu" />-->
+
+</LinearLayout>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    android:orientation="vertical"-->
+    <!--    tools:context=".MainActivity">-->
+
+    <!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    android:background="#FFFFFFFF"-->
+    <!--    tools:context=".AddNoteActivity">-->
+    <!--    -->
+    <!--    <EditText-->
+    <!--        android:id="@+id/note"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0px"-->
+    <!--        android:gravity="top|left"-->
+    <!--        android:inputType="textMultiLine"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/buttonAddNote"/>-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/buttonAddNote"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:backgroundTint="#FFFFFFFF"-->
+    <!--        android:text="Done"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent" />-->
+    <!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="horizontal">-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:src="@drawable/ic_checkbox" />-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:src="@drawable/ic_camera" />-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:src="@drawable/ic_draw" />-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:src="@drawable/ic_addnote" />-->
+    <!--    </LinearLayout>-->
+
+    <!--</LinearLayout>-->
